@@ -662,7 +662,7 @@ img{
 }
 /*===== MEDIA QUERIES =====*/
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 640px){
   .home_img img{
     width:330px;
   }
@@ -672,11 +672,23 @@ img{
   .project__container{
     grid-template-columns: repeat(2,1fr);
   }
+  
   .contact__form{
     width: 450px;
     justify-self: center;
   }
 }
+@media screen and (max-width: 540px){
+  .cert__container{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 840px) {
+  .cert__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  }
 
 @media screen and (min-width: 768px){
   body{
